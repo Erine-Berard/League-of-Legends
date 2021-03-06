@@ -1,0 +1,714 @@
+@font-face {
+    font-family: 'police1';
+    src: url('police/police 1.woff2');}
+@font-face {
+    font-family: 'police2';
+    src: url('police/police 2.woff2');}
+@font-face {
+    font-family: 'policeJoli';
+    src: url('MarchClean.ttf');}
+
+body{
+    padding:0;
+    margin:0;
+    background-color: black;}
+
+.bouton1{
+    cursor: pointer;}
+
+/* color:#DAA520; */
+/* https://developer.mozilla.org/fr/docs/Web/CSS/overflow */
+
+
+
+/* En tete commun a toute les pages */
+    header{
+        margin: 0;
+
+        text-align: center;}
+
+
+
+    /* Menu déroulant */
+        .bouton{
+            float:left;
+            cursor: pointer;}
+        
+        /* Position et apparence du logo */
+            .bouton img{
+                margin-top: 10px;
+                margin-left:10px;
+                margin-right:5px;
+                width: 50px;}
+
+            .bouton img:hover{
+               margin-top: 5px;
+               margin-left:5px;
+               margin-right:0;
+               width: 60px;}
+
+        /* Apparence du menu */
+            .menu {
+               height:250px;
+               background-image: url("Images/region/region.jpg");
+               background-position: center;
+               background-size: 100%;
+               background-repeat: no-repeat;
+               width:100%;}
+
+            .menu a{
+               font-family: police2;
+               text-decoration: none;
+               font-size: 15px;
+               
+
+               display: block;
+
+               padding-left:10px;
+               padding-right:10px;
+               padding-top:20px;}
+
+           .menu a:hover{
+               text-decoration: underline;} 
+
+            .accueil a{
+                font-size: 20px;
+                margin-left:-2%;
+                color: black;
+                text-shadow: 5px 5px 5px rgb(250, 232, 218);}
+
+            .un{
+                width:33%;
+                float:left;}
+                
+            .un a {
+                color: rgb(250, 232, 218);
+                text-shadow: 5px 5px 5px black;}
+
+            .deux{
+                width:33%;
+                float:left;}
+            .deux a{
+                color: black;
+                text-shadow: 5px 5px 5px rgb(250, 232, 218);}
+
+            .trois{
+                width:30%;
+                float:left;}
+
+            .trois a{
+                color: rgb(250, 232, 218);
+                text-shadow: 5px 5px 5px black;}
+            
+        /* Pour l'animation */
+            .nav{
+               margin-top:-255px;
+               transition-duration: 0.2s;}
+
+            .ouvertureNav{
+                margin-top:-5px;
+                transition-duration: 0.2s;}
+
+
+
+    /* Apparence liens qui dirige vers la page officiel */
+        header a img{
+            padding-top: 5px; 
+            width: 150px;}
+
+        header a:hover img{
+            width:170px;}
+
+        .officiel {
+            height :70px;
+        }
+          
+            
+    /* Apparence liens qui dirige vers la connexion */
+        .connexion{
+            float: right;
+
+            margin-top:-40px;
+            margin-right:1%;
+
+            font-family: police2;
+            font-size: 15px;
+            color: rgb(250, 232, 218);
+            text-decoration: none;}
+
+        .connexion:hover{
+            margin-left:-36px;
+            Font-weight:bold;
+            font-size: 20px;}
+
+
+
+    /* Apparence des images d'en tete */
+        .EnTete{
+            z-index: 1;
+            margin-top:-80px;
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            height:450px;}
+
+        .ImgEnTeteAccueil {
+            background-image: url("Images/region/League.jpg");}
+        
+        .ImgEnTeteBandle {
+            background-image: url("Images/region/bandle.jpg");
+            background-position: bottom;
+            background-size: 100%;}
+
+        .ImgEnTeteBilgewater {
+            background-image: url("Images/region/bilgewater.jpg");
+            background-position: center;
+            background-size: 125%;}
+
+        .ImgEnTeteDemacia {
+            background-image: url("Images/region/demacia.jpg");
+            background-position: center;
+            background-size: 100%;}
+    
+        .ImgEnTeteFreljord {
+            background-image: url("Images/region/freljord.jpg");
+            background-position: center;
+            background-size: 100%;}
+
+        .ImgEnTeteIles {
+            background-image: url("Images/region/shadow-isles.jpg");
+            background-position: top;
+            background-size: 100%;}
+
+        .ImgEnTeteIonia {
+            background-image: url("Images/region/ionia.jpg");
+            background-position: top;
+            background-size: 100%;}
+
+        .ImgEnTeteIxtal {
+            background-image: url("Images/region/ixtal.jpg");
+            background-position: top;
+            background-size: 100%;}
+
+        .ImgEnTeteNoxus {
+            background-image: url("Images/region/noxus.jpg");
+            background-position: top;
+            background-size: 100%;}
+
+        .ImgEnTetePiltover {
+            background-image: url("Images/region/piltover.jpg");
+            background-position: bottom;
+            background-size: 100%;}
+        
+        .ImgEnTeteShurima {
+            background-image: url("Images/region/shurima.jpg");
+            background-position: top;
+            background-size: 100%;}
+
+        .ImgEnTeteTargon{
+            background-image: url("Images/region/mount.jpg");
+            background-position: center;
+            background-size: 100%;}
+
+        .ImgEnTeteVoid {
+            background-image: url("Images/region/void.jpg");
+            background-position: center;
+            background-size: 100%;}
+
+        .ImgEnTeteZaun {
+            background-image: url("Images/region/zaun.jpg");
+            background-position: bottom;
+            background-size: 100%;}
+        
+        .ImgEnTeteMF {
+            background-image: url("Images/MF/MF.jpg");
+            background-size: 100%;}
+
+        .ImgEnTeteGP{
+            background-image: url("Images/GP/gangplank.htm");
+            background-size: 100%;}
+
+        .ImgEnTeteGraves{
+            background-image: url("Images/Graves/graves.htm");
+            background-size: 100%;}
+
+        .ImgEnTeteTF{
+            background-image: url("Images/TF/TF.htm");
+            background-size: 100%;}
+
+        .ImgEnTeteIllaoi{
+            background-image: url("Images/Illaoi/Illaoi.htm");
+            background-size: 100%;}
+
+
+
+    /* Titre de la page */
+        h1{
+            z-index: 3;
+
+            font-family: policeJoli;
+            font-size: 120px;
+            color: rgb(250, 232, 218);
+            text-shadow: 5px 5px 5px black;}
+
+
+
+
+
+
+
+
+
+
+/* Diviseur */
+    .diviseur{
+        width:100%;}
+
+
+
+    
+
+
+
+
+
+
+/* Main de la page d'accueil */
+
+    /*Description du syte*/
+    p{
+        font-family: police2;
+        text-align: center;
+        color: rgb(250, 232, 218);}
+
+
+    /* Les regions */
+        main{
+            overflow: hidden;}
+
+        /*Titre*/
+            .lien_principal a{/*Apparence du titre*/
+                margin-left: 2%;
+                display: block;
+
+                font-family: policeJoli;
+                font-size: 50px;
+                color: rgb(250, 232, 218);}
+
+            .lien_principal a:hover{/*Apparence du titre quand on le survole*/
+               font-size: 55px;}
+
+        /*Les images des régions*/
+
+            .image{ /* position des images clicable*/
+               width: 210px;
+               float:left;
+               margin-left: 2%;
+               margin-right: 2%;}
+  
+            .image img{ /*apparence des images clicable*/
+               border-radius: 5px;
+               width:210px;
+               height:150px;}
+
+            .image img:hover{/*apparence des images clicable quand on les survoles*/
+               width: 230px;}
+
+            .image figcaption{/*legende des images clicable*/
+               text-align: center;
+               margin-top: -50px;
+        
+               color: rgb(250, 232, 218);
+               Font-weight: bold;
+               font-size: 20px;
+               font-family: policejolie;}
+
+
+
+
+
+
+/* main des régions*/
+
+    .MainRegion{
+       margin-left:20% ;
+       margin-right:20% ; 
+       text-align : center;}
+
+
+
+    /* Les boutons */
+        .nav2{
+            width:100%;
+            text-align: center;}
+
+        button{
+            background-color: rgb(250, 209, 177);
+            color: black ;
+            font-family: police1;
+
+            border: none;
+            border-radius: 0 10px 0 10px;
+            box-shadow: 5px 5px 5px rgb(250, 232, 218);
+
+            padding: 1%;
+            margin:2%;}
+
+        button:hover{
+            Font-weight: bold;}
+
+
+
+    /*description de la région*/
+        .description {
+           text-align: left;       
+           font-family: police1;} 
+
+        span{
+           Font-weight: bold;
+           color: rgb(247, 168, 109);} 
+    
+
+
+    /* Video */
+        .video{
+           margin-top:20px;
+           margin-bottom:20px;
+
+           width: 560px; 
+           height: 315px;
+
+           border-radius: 20px;
+           border:none;}
+
+
+
+    /*tableau des champions*/
+        /*titre*/
+            h2{
+                font-family: policeJoli;
+                font-size: 30px;
+                color: rgb(250, 232, 218);
+                Text-decoration: underline;}
+
+        /* Apparence du tableau */
+            table {
+                margin-top: 10px;
+
+                border: solid;
+                color: rgb(250, 232, 218);
+                text-align:center;}
+
+            td {
+                padding-left:2%;
+                padding-right:2%;
+                padding-top:20px;
+                padding-bottom:20px;}
+
+        /* Apparence des liens */
+            table a{
+                font-family: police2;
+                font-size: 20px;
+                color: rgb(250, 232, 218);
+                text-decoration: none;}
+
+            table a:hover{
+               font-size: 30px;
+               Font-weight:bold;}
+
+        /* Apparence du nom des champions */
+            .Entete{
+                border-top: solid;
+                border-bottom: solid;
+                color: rgb(250, 232, 218);}
+
+            .Entete1{
+                border-bottom: solid;
+                color: rgb(250, 232, 218);}
+
+        /* Apparence des images des champions */
+            table img{
+                width:100%;
+                border-radius: 20px;
+                margin-left:2%;}
+
+
+    /* Les histoires */
+        /*position des balises avec les histoires*/
+            .histoires {
+                text-align:left;}
+
+            .histoires ul{
+                color:rgb(250, 232, 218);
+                text-align:center;
+                list-style-type:none;}
+
+        .histoires li{
+                width:100%;} 
+
+        /* Apparence des liens */
+        .histoires li a{
+                color:rgb(250, 232, 218);
+                font-family: police1;
+                text-decoration: none; 
+                font-size: 15px;}
+        
+        .histoires li a:hover {
+               Font-size: 17px;
+               font-weight: bold;}
+
+        /* Apparence du text de début */
+            .histoires p{
+               text-align: left; 
+               font-family: police1;}
+
+        /*titre des histoires*/
+            .IconeHistoire p{
+                text-align: center;
+                font-family: police1;
+                padding-top:50%;
+                text-shadow: 5px 5px 5px black;}
+
+        /* Apparence de l'image de l'histoire */
+            .IconeHistoire{
+                margin-top:30px;
+                margin-left: 30%;
+                width: 40%;
+                height: 200px;
+                text-align: center;        
+                border-radius:10px;}
+
+            .MF{
+                background-image: url("Images/MF/MissFortune.jpg");
+                background-position: center;}
+
+            .GP{
+                background-image: url("Images/GP/GP.jpg");
+                background-position: top;
+                background-size: 100%;}
+
+            .Graves{
+                background-image: url("Images/Graves/Graves.png");
+                background-position: center;
+                background-size: 100%;}
+
+            .TF{
+                background-image: url("Images/TF/TF.jpg");
+                background-position: center;
+                background-size: 100%;}
+
+            .LMR{
+               background-image: url("Images/La_Marée_Rougeoyante.jpg");
+               background-position: center;
+               background-size: 100%;}
+
+
+
+
+
+
+
+
+
+/* Main de la page contacte*/
+    form  {
+        margin-top:20px;}
+
+    /* Apparence des division */
+        .divChamps{
+           text-align:center;
+           width:100%;
+           margin-bottom:20px;}
+
+    .sexualité{
+        color:rgb(250, 232, 218);
+        text-align:center;}
+
+    label {
+        color:rgb(250, 232, 218);
+        font-family: police1;
+        font-size: 20px;
+        margin-left:5%;}
+
+    input{
+        border-radius: 0 10px 0 10px;
+        margin-left:2%;
+        text-align:center;
+        background-color: rgb(250, 232, 218);}
+
+    textarea{
+        border-radius: 0 10px 0 10px;
+        margin-left:2%;
+        background-color: rgb(250, 232, 218);
+        padding:5px;}
+          
+    select{
+        border-radius: 0 10px 0 10px;
+        margin-left:2%;
+        text-align:center;
+        background-color: rgb(250, 232, 218);}
+
+    #notreMessage{
+        width:30%;
+        height:70px;}
+
+    form button{
+        width:15%;
+        margin-left: 75%;
+        margin-right:10%;}
+
+
+
+
+
+
+
+
+
+/* Main des champions */
+    /* Titre */
+        h3{
+            margin-top:-80px;
+
+            color:rgb(250, 232, 218);
+            text-shadow: 5px 5px 5px black;
+            font-family: policeJoli;
+            font-weight: bold;
+            font-size: 40px;
+        }
+    /* La description */
+        .MainLesChampions{
+            margin-left: 20%;
+            margin-right:20%;
+
+            text-align: center;}
+
+        .description{
+            text-align: center;}
+
+    /* Les champions liée */
+        .championLiés img{
+            width:30%;
+            border-radius: 20px;
+            margin-left:2%;
+            margin-bottom:20px;}
+    
+
+
+
+
+
+
+
+
+
+/* footer */
+    footer{
+        width:100%;
+        text-align:center;
+        margin-top: 100px;
+        position: relative;
+        bottom:0;
+        padding-top:10px;
+        padding-bottom:100px;
+  
+        background-color:rgb(26, 25, 25);}
+
+    /*Bouton mode light */
+        .bouton1{
+            font-family: police2;
+            font-size: 15px;
+            color: gray;
+            margin:20px;}
+
+        .bouton1:hover{
+            font-size: 20px;}
+
+    /* Musique pour la page d'accueille */
+        audio{
+            display:block;
+            margin-left:40%;
+            width:20%;}
+    
+    /* liens vers les réseau sociaux de lol */
+        footer img{
+            width: 40px;}
+
+        footer img:hover{
+            width: 50px;}
+
+    /*Vers la page contacte */
+        .contact{
+            font-family: police2;
+            font-size: 15px;
+            color: gray;
+            text-decoration: none;}
+
+        .contact:hover{
+            font-size: 20px;}
+
+    /* Les droits */
+        footer p{
+            color: gray;
+            font-size: 10px;}
+
+        .droit{
+            padding-right:2%;
+            color: gray;
+            font-size: 10px;}
+        
+        .droit:hover{
+            font-size: 15px;}
+
+
+
+
+/* Light mode */
+.White{
+    background-color:rgb(250, 232, 218);}
+
+.White a{
+    color:black;}
+
+.White p{
+    color: black;}
+
+.White h2{
+    color: black;}
+
+.White td{
+    color:black;}
+
+.White table{
+    border:black solid;}
+
+.White button{
+    background-color:black;
+    color:rgb(250, 232, 218);
+    box-shadow: 5px 5px 5px rgb(26, 25, 25);}
+
+.White footer{
+    background-color: rgb(247, 168, 109);}
+
+.White .bouton1{
+    color:black;}
+
+.White .histoires p{
+    color :rgb(250, 232, 218);}
+
+.White label {
+    color:black;}
+
+.White input{
+    background-color:black;
+    color: rgb(250, 232, 218);}
+
+.White textarea{
+    background-color:black;
+    color: rgb(250, 232, 218);}
+
+.White select{
+    background-color: black;
+    color:  rgb(250, 232, 218);}
+
+
